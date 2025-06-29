@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/rsc">
+        <file>ebook.png</file>
+        <file>image.png</file>
+        <file>video.png</file>
+        <file>audio.png</file>
+    </qresource>
+</RCC>
