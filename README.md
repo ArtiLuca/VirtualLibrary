@@ -6,6 +6,7 @@
 ![Qt](https://img.shields.io/badge/Qt-41CD52?style=for-the-badge\&logo=qt\&logoColor=white)
 ![OOP](https://img.shields.io/badge/Object--Oriented-Programming-2E8B57?style=for-the-badge)
 ![Design Patterns](https://img.shields.io/badge/Design-Patterns-blue?style=for-the-badge)
+![University Project](https://img.shields.io/badge/University-Project-blue?style=for-the-badge)
 
 </p>
 
@@ -13,24 +14,25 @@
 
 ## 📖 Overview
 
-**Virtual Library** is a desktop application developed in C++ and Qt for managing a collection of multimedia items.
+**Virtual Library** is a C++17 and Qt desktop application for managing a multimedia library.
 
-The application supports different media types, including audio files, videos, e-books and images. It provides tools for creating, editing, removing, searching, viewing and evaluating media items through a graphical interface.
+The application allows users to create, edit, remove, search and view different types of media items, including audio files, videos, e-books and images.
 
-The project focuses on object-oriented design, inheritance, polymorphism, separation of responsibilities and the practical use of common design patterns.
+The project focuses on object-oriented programming principles such as inheritance, polymorphism, abstraction, separation of responsibilities and extensibility.
+It also applies several design patterns to organize the creation, manipulation and analysis of media objects.
 
 ---
 
 ## ✨ Main Features
 
-* Management of audio, video, e-book and image items
-* Creation, editing and removal of media
-* Search with multiple filters
+* Management of multiple media types
+* Creation, editing and removal of media items
+* Search functionality with multiple filters
 * Type-specific validation
 * Media scoring based on item attributes
 * Undo and redo support
-* JSON-based library persistence
-* Qt Widgets graphical interface
+* JSON-based save/load functionality
+* Qt Widgets graphical user interface
 * File and console logging
 * Extensible object-oriented architecture
 
@@ -38,14 +40,14 @@ The project focuses on object-oriented design, inheritance, polymorphism, separa
 
 ## 🧩 Supported Media Types
 
-| Media type | Example attributes                                         |
-| ---------- | ---------------------------------------------------------- |
-| Audio      | Artist, album, genre, duration and audio properties        |
-| Video      | Director, genre, duration, resolution and video properties |
-| E-book     | Author, publisher, ISBN, language and page count           |
-| Image      | Creator, category, resolution, bit depth and location      |
+| Media Type | Example Attributes                                                  |
+| ---------- | ------------------------------------------------------------------- |
+| Audio      | Artist, album, genre, duration and audio-specific properties        |
+| Video      | Director, genre, duration, resolution and video-specific properties |
+| E-book     | Author, publisher, ISBN, language and page count                    |
+| Image      | Creator, category, resolution, bit depth and location               |
 
-Common information is managed through an abstract media hierarchy, while each concrete type defines its own specialized attributes and behaviour.
+Common attributes are handled through an abstract media hierarchy, while each concrete media type defines its own specialized data and behaviour.
 
 ---
 
@@ -55,26 +57,26 @@ The application follows an MVC-inspired organization, separating the domain mode
 
 ### Model
 
-Contains the core application logic:
+The model contains the core logic of the application, including:
 
 * media hierarchy
 * library management
 * builders and factories
 * visitors
-* searching and scoring
 * validation
+* searching and scoring
 * JSON serialization
 * logging
 
 ### Controller
 
-Coordinates the interaction between the model and the graphical interface.
+The controller coordinates the interaction between the model and the graphical interface.
 
 It manages operations such as media insertion, editing, removal, searching, persistence and undo/redo.
 
 ### View
 
-Contains the Qt Widgets graphical interface and the components used to create, edit, search and display media items.
+The view contains the Qt Widgets graphical interface and the components used to create, edit, search and display media items.
 
 ---
 
@@ -85,7 +87,7 @@ Contains the Qt Widgets graphical interface and the components used to create, e
 | Visitor | Type-specific operations such as validation, searching, scoring and display |
 | Builder | Progressive construction and modification of media objects                  |
 | Factory | Creation of the appropriate concrete media type                             |
-| Command | Undo and redo for insert, edit and remove operations                        |
+| Command | Undo and redo support for insert, edit and remove operations                |
 
 ---
 
@@ -130,9 +132,9 @@ Contains the Qt Widgets graphical interface and the components used to create, e
 
 The application can save and load the multimedia library using JSON files.
 
-Each media type implements its own serialization logic, while the library manages the complete collection.
+Each media type implements its own serialization logic, while the library manages the complete media collection.
 
-An example library is included in:
+An example library file is included in:
 
 ```text
 src/example_library.json
@@ -142,7 +144,7 @@ src/example_library.json
 
 ## ▶️ Building and Running
 
-The simplest way to build the project is through **Qt Creator**:
+The simplest way to build and run the project is through **Qt Creator**:
 
 1. Open `src/Virtual_Library.pro`.
 2. Select a compatible Qt kit.
@@ -157,7 +159,17 @@ qmake Virtual_Library.pro
 make
 ```
 
-Depending on the compiler and operating system, the build command may instead be `mingw32-make` or `nmake`.
+Depending on the compiler and operating system, the build command may instead be:
+
+```bash
+mingw32-make
+```
+
+or:
+
+```bash
+nmake
+```
 
 ---
 
@@ -169,17 +181,17 @@ The complete project report is available in:
 docs/Virtual Library Project Report.pdf
 ```
 
-The report describes the application requirements, class hierarchy, architecture, design patterns, persistence system and graphical interface.
-
 The report is written in **Italian**, as the project was originally developed for an Italian university course.
+
+It describes the application requirements, class hierarchy, architecture, design patterns, persistence system, graphical interface and implementation choices.
 
 ---
 
 ## 🎓 Academic Context
 
-This project was developed individually as part of an Object-Oriented Programming course.
+This project was developed individually as part of an Object-Oriented Programming course at the **University of Padua**.
 
-Its goal was to design and implement a non-trivial C++ application using inheritance, polymorphism, abstract classes, dynamic binding, design patterns, safe resource management and a graphical user interface.
+The goal was to design and implement a non-trivial C++ desktop application using inheritance, polymorphism, abstract classes, dynamic binding, design patterns, safe resource management and a graphical user interface.
 
 ---
 
