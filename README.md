@@ -127,11 +127,7 @@ The application can save and load the multimedia library using JSON files.
 
 Each media type implements its own serialization logic, while the library manages the complete media collection.
 
-An example library file is included in:
-
-```text
-src/example_library.json
-```
+An example library file is included in `src/example_library.json`.
 
 ---
 
@@ -158,10 +154,9 @@ Depending on the compiler and operating system, the build command may instead be
 
 ## Documentation
 
-The complete project report is available in:
+The complete project report is available in `docs/Virtual Library Project Report.pdf`.
 
-```text
-docs/Virtual Library Project Report.pdf
+The report describes the application requirements, class hierarchy, architecture, design patterns, persistence system, graphical interface and implementation choices.
 
 ---
 
