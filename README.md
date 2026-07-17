@@ -1,4 +1,4 @@
-# 📚 Virtual Library
+# Virtual Library
 
 <p align="center">
 
@@ -12,18 +12,17 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 **Virtual Library** is a C++17 and Qt desktop application for managing a multimedia library.
 
 The application allows users to create, edit, remove, search and view different types of media items, including audio files, videos, e-books and images.
 
-The project focuses on object-oriented programming principles such as inheritance, polymorphism, abstraction, separation of responsibilities and extensibility.
-It also applies several design patterns to organize the creation, manipulation and analysis of media objects.
+The project focuses on object-oriented programming principles such as inheritance, polymorphism, abstraction, separation of responsibilities and extensibility. It also applies several design patterns to organize the creation, manipulation and analysis of media objects.
 
 ---
 
-## ✨ Main Features
+## Main Features
 
 * Management of multiple media types
 * Creation, editing and removal of media items
@@ -38,7 +37,7 @@ It also applies several design patterns to organize the creation, manipulation a
 
 ---
 
-## 🧩 Supported Media Types
+## Supported Media Types
 
 | Media Type | Example Attributes                                                  |
 | ---------- | ------------------------------------------------------------------- |
@@ -51,7 +50,7 @@ Common attributes are handled through an abstract media hierarchy, while each co
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 The application follows an MVC-inspired organization, separating the domain model, application logic and graphical interface.
 
@@ -80,7 +79,7 @@ The view contains the Qt Widgets graphical interface and the components used to 
 
 ---
 
-## 🧠 Design Patterns
+## Design Patterns
 
 | Pattern | Usage                                                                       |
 | ------- | --------------------------------------------------------------------------- |
@@ -91,7 +90,7 @@ The view contains the Qt Widgets graphical interface and the components used to 
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 | Technology         | Purpose                                    |
 | ------------------ | ------------------------------------------ |
@@ -103,7 +102,7 @@ The view contains the Qt Widgets graphical interface and the components used to 
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -113,12 +112,6 @@ The view contains the Qt Widgets graphical interface and the components used to 
 └── src/
     ├── Controller/
     ├── Model/
-    │   ├── Builders/
-    │   ├── Library/
-    │   ├── Loggers/
-    │   ├── Media/
-    │   ├── Utilities/
-    │   └── Visitors/
     ├── Resource/
     ├── View/
     ├── Virtual_Library.pro
@@ -128,7 +121,7 @@ The view contains the Qt Widgets graphical interface and the components used to 
 
 ---
 
-## 💾 Data Persistence
+## Data Persistence
 
 The application can save and load the multimedia library using JSON files.
 
@@ -142,7 +135,7 @@ src/example_library.json
 
 ---
 
-## ▶️ Building and Running
+## Building and Running
 
 The simplest way to build and run the project is through **Qt Creator**:
 
@@ -159,21 +152,11 @@ qmake Virtual_Library.pro
 make
 ```
 
-Depending on the compiler and operating system, the build command may instead be:
-
-```bash
-mingw32-make
-```
-
-or:
-
-```bash
-nmake
-```
+Depending on the compiler and operating system, the build command may instead be `mingw32-make` or `nmake`.
 
 ---
 
-## 📄 Documentation
+## Documentation
 
 The complete project report is available in:
 
@@ -187,7 +170,7 @@ It describes the application requirements, class hierarchy, architecture, design
 
 ---
 
-## 🎓 Academic Context
+## Academic Context
 
 This project was developed individually as part of an Object-Oriented Programming course at the **University of Padua**.
 
@@ -195,6 +178,6 @@ The goal was to design and implement a non-trivial C++ desktop application using
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 * Luca Artinian — [@ArtiLuca](https://github.com/ArtiLuca)
