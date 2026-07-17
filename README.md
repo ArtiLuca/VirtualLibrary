@@ -162,11 +162,6 @@ The complete project report is available in:
 
 ```text
 docs/Virtual Library Project Report.pdf
-```
-
-The report is written in **Italian**, as the project was originally developed for an Italian university course.
-
-It describes the application requirements, class hierarchy, architecture, design patterns, persistence system, graphical interface and implementation choices.
 
 ---
 
